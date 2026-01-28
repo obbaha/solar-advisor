@@ -131,5 +131,8 @@
     </footer>
 
     @stack('scripts')
+
+    <script id="messenger-widget-b" src="https://cdn.botpenguin.com/website-bot.js" defer>6978a20322f4edfc56357b82,6978a1cc3ef99c5fdba75733</script>
+
 </body>
 </html>
