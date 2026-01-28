@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Services\SolarcalCulationService;
+use App\Services\SolarCalculationService;
 
 class SolarController extends Controller
 {

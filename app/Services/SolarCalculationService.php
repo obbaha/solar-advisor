@@ -13,7 +13,7 @@ namespace App\Services;
  * 
  * @package App\Services
  */
-class SolarcalCulationService
+class SolarCalculationService
 {
     /* ==================== الثوابت التقنية ==================== */
     
