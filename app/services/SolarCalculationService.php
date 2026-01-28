@@ -1,6 +1,6 @@
 <?php
 
-namespace App\services;
+namespace App\Services;
 
 /**
  * خدمة حساب مكونات النظام الشمسي الهجين
@@ -13,7 +13,7 @@ namespace App\services;
  * 
  * @package App\Services
  */
-class solarcalculationservice
+class SolarcalCulationService
 {
     /* ==================== الثوابت التقنية ==================== */
     
