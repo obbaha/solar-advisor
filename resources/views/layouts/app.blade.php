@@ -132,7 +132,25 @@
 
     @stack('scripts')
 
-    <script id="messenger-widget-b" src="https://cdn.botpenguin.com/website-bot.js" defer>6978a20322f4edfc56357b82,6978a1cc3ef99c5fdba75733</script>
+
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '697b93de59afd3be3ff814d8' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+
+
 
 </body>
 </html>
