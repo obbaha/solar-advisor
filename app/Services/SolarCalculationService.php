@@ -80,8 +80,8 @@ class SolarCalculationService
     
     private const MIN_SOLAR_RATIO = 0.50;            // الحد الأدنى لنسبة الطاقة الشمسية
     private const MAX_SOLAR_RATIO = 0.70;            // الحد الأقصى لنسبة الطاقة الشمسية
-    private const SOLAR_BATTERY_CHARGE_RATIO = 0.40; // نسبة شحن البطاريات من الطاقة الشمسية
-    private const BATTERY_OVERSIZE_FACTOR = 1.10;    // زيادة حجم البطارية بنسبة %10
+    private const SOLAR_BATTERY_CHARGE_RATIO = 0.60; // نسبة شحن البطاريات من الطاقة الشمسية
+    private const BATTERY_OVERSIZE_FACTOR = 1.25;    // زيادة حجم البطارية بنسبة %10
     
     /* ==================== الدوال الرئيسية ==================== */
     
@@ -464,7 +464,7 @@ private function calculateBatteries(float $nightConsumption, array $energyMix, i
     // حساب السعة المطلوبة نظراً للاستهلاك الليلي
 
 // كلما زادت ساعات الكهرباء، قلّت الحاجة للبطارية
-$coverageRatio = $gridHours >= 12 ? 0.40 : ($gridHours >= 6 ? 0.60 : 0.70);
+$coverageRatio = $gridHours >= 12 ? 0.40 : 0.70;
 $requiredCapacityWh = $nightConsumption * 1000 * $coverageRatio;
 
 
